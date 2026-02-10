@@ -18,7 +18,10 @@ The bot connects to the **Binance Futures Testnet API** for safe development and
 
 ```
 ┌───────────────────────────────────────────────────────────┐
-│                       CLI Layer                           │
+│              Unified CLI — cli.py                         │
+│      Interactive menu  │  Direct command-line mode        │
+├───────────────────────────────────────────────────────────┤
+│                     Module CLI Layer                       │
 │   market_orders │ limit_orders │ stop_limit │ oco │ twap  │
 │   grid │ historical_analysis │ fear_greed                 │
 ├───────────────────────────────────────────────────────────┤
@@ -40,6 +43,7 @@ The bot connects to the **Binance Futures Testnet API** for safe development and
 
 ```
 pruthvijain-binance-bot/
+├── cli.py                              # 🚀 Unified CLI (interactive + direct mode)
 ├── src/
 │   ├── __init__.py                     # Package init
 │   ├── config.py                       # API config, .env loading
@@ -49,13 +53,16 @@ pruthvijain-binance-bot/
 │   ├── market_orders.py                # Market order class + CLI
 │   ├── limit_orders.py                 # Limit order class + CLI
 │   ├── advanced/
+│   │   ├── __init__.py                 # Subpackage init
 │   │   ├── stop_limit.py               # Stop-limit orders
 │   │   ├── oco.py                      # OCO implementation
 │   │   ├── twap.py                     # TWAP strategy
 │   │   └── grid.py                     # Grid trading
 │   └── analysis/
+│       ├── __init__.py                 # Subpackage init
 │       ├── historical_analysis.py      # Trade analytics
 │       └── fear_greed.py               # Sentiment analysis
+├── screenshots/                        # Terminal & Binance screenshots
 ├── historical_data.csv                 # 211k+ trade records
 ├── fear_greed_index.csv                # Sentiment data (2018–2025)
 ├── bot.log                             # Structured execution log
