@@ -1,0 +1,131 @@
+2026-02-10 11:49:48 - __main__ - INFO - Connected to Binance Futures TESTNET
+2026-02-10 11:49:48 - __main__ - INFO - BinanceClient initialized successfully
+2026-02-10 11:49:49 - __main__ - INFO - Current price for BTCUSDT: 69316.1
+2026-02-10 11:49:49 - __main__ - INFO - Balance for USDT: Total=5000.00000000, Available=5000.00000000
+2026-02-10 11:50:11 - src.client - INFO - Connected to Binance Futures TESTNET
+2026-02-10 11:50:11 - src.client - INFO - BinanceClient initialized successfully
+2026-02-10 11:50:11 - __main__ - INFO - Initializing MarketOrder: BUY 0.001 BTCUSDT
+2026-02-10 11:50:11 - __main__ - INFO - Validating market order parameters...
+2026-02-10 11:50:11 - __main__ - INFO - All parameters validated successfully
+2026-02-10 11:50:11 - __main__ - INFO - Executing market order: BUY 0.001 BTCUSDT
+2026-02-10 11:50:11 - src.client - INFO - Current price for BTCUSDT: 69326.0
+2026-02-10 11:50:11 - __main__ - INFO - Current BTCUSDT price: $69,326.00 (reference only — market orders fill at best available)
+2026-02-10 11:50:11 - src.client - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-02-10 11:50:12 - src.client - ERROR - API error placing order: Order's notional must be no smaller than 100 (unless you choose reduce only). (Code: -4164)
+Traceback (most recent call last):
+  File "/Users/pruthvijain/Documents/Projects/pruthvijain-binance-bot/src/client.py", line 257, in place_order
+    order = self.client.futures_create_order(**params)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/binance/client.py", line 7867, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/binance/client.py", line 143, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/binance/client.py", line 106, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/binance/client.py", line 115, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-4164): Order's notional must be no smaller than 100 (unless you choose reduce only).
+2026-02-10 11:50:12 - __main__ - ERROR - Market order failed — no response from API
+2026-02-10 11:57:57 - src.client - INFO - Connected to Binance Futures TESTNET
+2026-02-10 11:57:57 - src.client - INFO - BinanceClient initialized successfully
+2026-02-10 11:57:57 - __main__ - INFO - Initializing MarketOrder: BUY 0.002 BTCUSDT
+2026-02-10 11:57:57 - __main__ - INFO - Validating market order parameters...
+2026-02-10 11:57:57 - __main__ - INFO - All parameters validated successfully
+2026-02-10 11:57:57 - __main__ - INFO - Executing market order: BUY 0.002 BTCUSDT
+2026-02-10 11:57:57 - src.client - INFO - Current price for BTCUSDT: 69074.0
+2026-02-10 11:57:57 - __main__ - INFO - Current BTCUSDT price: $69,074.00 (reference only — market orders fill at best available)
+2026-02-10 11:57:57 - src.client - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.002}
+2026-02-10 11:57:58 - src.client - INFO - Order placed successfully: ID=12158220454, Symbol=BTCUSDT, Side=BUY, Type=MARKET, Status=NEW
+2026-02-10 11:57:58 - __main__ - INFO - ✅ Market order executed successfully!
+   Order ID    : 12158220454
+   Symbol      : BTCUSDT
+   Side        : BUY
+   Quantity    : 0.002
+   Status      : NEW
+   Avg Price   : 0.00
+2026-02-10 11:59:15 - __main__ - INFO - Loaded 211224 trades from /Users/pruthvijain/Documents/Projects/pruthvijain-binance-bot/historical_data.csv
+2026-02-10 11:59:18 - __main__ - INFO - Loaded 2644 Fear & Greed entries from /Users/pruthvijain/Documents/Projects/pruthvijain-binance-bot/fear_greed_index.csv
+2026-02-10 12:04:33 - src.client - INFO - Connected to Binance Futures TESTNET
+2026-02-10 12:04:33 - src.client - INFO - BinanceClient initialized successfully
+2026-02-10 12:09:42 - src.client - INFO - Connected to Binance Futures TESTNET
+2026-02-10 12:09:42 - src.client - INFO - BinanceClient initialized successfully
+2026-02-10 12:09:42 - __main__ - INFO - Initializing MarketOrder: BUY 0.002 BTCUSDT
+2026-02-10 12:09:42 - __main__ - INFO - Validating market order parameters...
+2026-02-10 12:09:42 - __main__ - INFO - All parameters validated successfully
+2026-02-10 12:09:42 - __main__ - INFO - Executing market order: BUY 0.002 BTCUSDT
+2026-02-10 12:09:43 - src.client - INFO - Current price for BTCUSDT: 69136.5
+2026-02-10 12:09:43 - __main__ - INFO - Current BTCUSDT price: $69,136.50 (reference only — market orders fill at best available)
+2026-02-10 12:09:43 - src.client - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.002}
+2026-02-10 12:09:43 - src.client - INFO - Order placed successfully: ID=12158286463, Symbol=BTCUSDT, Side=BUY, Type=MARKET, Status=NEW
+2026-02-10 12:09:43 - __main__ - INFO - ✅ Market order executed successfully!
+   Order ID    : 12158286463
+   Symbol      : BTCUSDT
+   Side        : BUY
+   Quantity    : 0.002
+   Status      : NEW
+   Avg Price   : 0.00
+2026-02-10 12:09:46 - src.client - INFO - Connected to Binance Futures TESTNET
+2026-02-10 12:09:46 - src.client - INFO - BinanceClient initialized successfully
+2026-02-10 12:09:46 - __main__ - INFO - Initializing LimitOrder: BUY 0.002 BTCUSDT @ $60,000.00 (TIF: GTC)
+2026-02-10 12:09:46 - __main__ - INFO - Validating limit order parameters...
+2026-02-10 12:09:47 - src.client - INFO - Current price for BTCUSDT: 69135.6
+2026-02-10 12:09:47 - __main__ - INFO - All parameters validated successfully
+2026-02-10 12:09:47 - __main__ - INFO - Executing limit order: BUY 0.002 BTCUSDT @ $60,000.00
+2026-02-10 12:09:47 - src.client - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.002, 'price': 60000.0, 'timeInForce': 'GTC'}
+2026-02-10 12:09:47 - src.client - INFO - Order placed successfully: ID=12158286650, Symbol=BTCUSDT, Side=BUY, Type=LIMIT, Status=NEW
+2026-02-10 12:09:47 - __main__ - INFO - ✅ Limit order placed successfully!
+   Order ID    : 12158286650
+   Symbol      : BTCUSDT
+   Side        : BUY
+   Quantity    : 0.002
+   Price       : 60000.00
+   TIF         : GTC
+   Status      : NEW
+2026-02-10 12:09:50 - __main__ - INFO - Loaded 211224 trades from /Users/pruthvijain/Documents/Projects/pruthvijain-binance-bot/historical_data.csv
+2026-02-10 12:09:54 - __main__ - INFO - Loaded 2644 Fear & Greed entries from /Users/pruthvijain/Documents/Projects/pruthvijain-binance-bot/fear_greed_index.csv
+2026-02-10 12:10:02 - __main__ - INFO - Connected to Binance Futures TESTNET
+2026-02-10 12:10:02 - __main__ - INFO - BinanceClient initialized successfully
+2026-02-10 12:10:02 - __main__ - INFO - Current price for BTCUSDT: 69132.1
+2026-02-10 12:10:02 - __main__ - INFO - Balance for USDT: Total=4999.88942992, Available=4980.15404991
+2026-02-10 12:36:14 - src.client - INFO - Connected to Binance Futures TESTNET
+2026-02-10 12:36:14 - src.client - INFO - BinanceClient initialized successfully
+2026-02-10 12:36:14 - __main__ - INFO - Initializing MarketOrder: BUY 0.002 BTCUSDT
+2026-02-10 12:36:14 - __main__ - INFO - Validating market order parameters...
+2026-02-10 12:36:14 - __main__ - INFO - All parameters validated successfully
+2026-02-10 12:36:14 - __main__ - INFO - Executing market order: BUY 0.002 BTCUSDT
+2026-02-10 12:36:14 - src.client - INFO - Current price for BTCUSDT: 69097.6
+2026-02-10 12:36:14 - __main__ - INFO - Current BTCUSDT price: $69,097.60 (reference only — market orders fill at best available)
+2026-02-10 12:36:14 - src.client - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.002}
+2026-02-10 12:36:15 - src.client - INFO - Order placed successfully: ID=12158331461, Symbol=BTCUSDT, Side=BUY, Type=MARKET, Status=NEW
+2026-02-10 12:36:15 - __main__ - INFO - ✅ Market order executed successfully!
+   Order ID    : 12158331461
+   Symbol      : BTCUSDT
+   Side        : BUY
+   Quantity    : 0.002
+   Status      : NEW
+   Avg Price   : 0.00
+2026-02-10 12:36:51 - src.client - INFO - Connected to Binance Futures TESTNET
+2026-02-10 12:36:51 - src.client - INFO - BinanceClient initialized successfully
+2026-02-10 12:36:51 - __main__ - INFO - Initializing LimitOrder: BUY 0.002 BTCUSDT @ $60,000.00 (TIF: GTC)
+2026-02-10 12:36:51 - __main__ - INFO - Validating limit order parameters...
+2026-02-10 12:36:52 - src.client - INFO - Current price for BTCUSDT: 69070.4
+2026-02-10 12:36:52 - __main__ - INFO - All parameters validated successfully
+2026-02-10 12:36:52 - __main__ - INFO - Executing limit order: BUY 0.002 BTCUSDT @ $60,000.00
+2026-02-10 12:36:52 - src.client - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.002, 'price': 60000.0, 'timeInForce': 'GTC'}
+2026-02-10 12:36:52 - src.client - INFO - Order placed successfully: ID=12158332246, Symbol=BTCUSDT, Side=BUY, Type=LIMIT, Status=NEW
+2026-02-10 12:36:52 - __main__ - INFO - ✅ Limit order placed successfully!
+   Order ID    : 12158332246
+   Symbol      : BTCUSDT
+   Side        : BUY
+   Quantity    : 0.002
+   Price       : 60000.00
+   TIF         : GTC
+   Status      : NEW
+2026-02-10 12:37:43 - __main__ - INFO - Loaded 211224 trades from /Users/pruthvijain/Documents/Projects/pruthvijain-binance-bot/historical_data.csv
+2026-02-10 12:38:13 - __main__ - INFO - Loaded 2644 Fear & Greed entries from /Users/pruthvijain/Documents/Projects/pruthvijain-binance-bot/fear_greed_index.csv
+2026-02-10 12:39:42 - __main__ - INFO - Connected to Binance Futures TESTNET
+2026-02-10 12:39:42 - __main__ - INFO - BinanceClient initialized successfully
+2026-02-10 12:39:42 - __main__ - INFO - Current price for BTCUSDT: 68964.7
+2026-02-10 12:39:43 - __main__ - INFO - Balance for USDT: Total=4999.83414376, Available=4966.25098883

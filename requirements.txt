@@ -1,0 +1,5 @@
+# Binance Futures Trading Bot - Dependencies
+
+python-binance>=1.0.19
+python-dotenv>=1.0.0
+requests>=2.31.0

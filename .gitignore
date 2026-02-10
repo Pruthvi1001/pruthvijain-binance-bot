@@ -1,0 +1,27 @@
+# Environment variables (NEVER commit real API keys)
+.env
+
+# Log files
+*.log
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+
+# Archives
+*.zip
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
