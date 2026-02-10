@@ -439,7 +439,37 @@ binance.exceptions.BinanceAPIException: APIError(code=-4164):
 
 ---
 
-## 7. Binance Testnet — Order History
+## 7. Enhanced CLI — Interactive Menu *(Bonus)*
+
+**Entry point:** `cli.py`
+
+As a bonus feature, we built a **unified CLI** that provides two modes of operation:
+
+### Direct Mode
+```bash
+python cli.py market BTCUSDT BUY 0.002
+python cli.py limit  BTCUSDT BUY 0.002 60000
+python cli.py stop   BTCUSDT SELL 0.002 58000 57800
+```
+
+### Interactive Mode
+```bash
+python cli.py
+```
+
+The interactive menu provides:
+- **Numbered menu** for all 6 order types + analysis tools
+- **Colored terminal output** using ANSI escape codes
+- **Input validation** with inline error messages and re-prompts
+- **Order confirmation** before execution (safety check)
+- **Account viewer** showing balance, positions, and unrealized PnL
+- **Detailed order response** displaying: `orderId`, `status`, `executedQty`, `avgPrice`
+
+![Interactive CLI Menu](screenshots/10_interactive_menu.png)
+
+---
+
+## 8. Binance Testnet — Order History
 
 The following screenshot from the Binance Futures Testnet shows all orders placed during testing, confirming successful API integration:
 
@@ -447,20 +477,21 @@ The following screenshot from the Binance Futures Testnet shows all orders place
 
 ---
 
-## 8. Summary
+## 9. Summary
 
 | Requirement | Weight | Status | Details |
 |---|---|---|---|
-| Market Orders | 50% (core) | ✅ Complete | Full CLI with validation |
-| Limit Orders | 50% (core) | ✅ Complete | GTC with price checks |
-| Stop-Limit Orders | 30% (bonus) | ✅ Complete | Conditional triggers |
-| OCO Orders | 30% (bonus) | ✅ Complete | Auto-cancel paired orders |
-| TWAP Strategy | 30% (bonus) | ✅ Complete | Time-sliced execution |
-| Grid Trading | 30% (bonus) | ✅ Complete | Automated range trading |
-| Input Validation | 10% | ✅ Complete | 16/16 tests pass |
-| Structured Logging | 10% | ✅ Complete | Console + bot.log |
-| README.md | 10% | ✅ Complete | Comprehensive docs |
-| report.pdf | 10% | ✅ Complete | This document |
+| Market Orders | Core | ✅ Complete | Full CLI with validation |
+| Limit Orders | Core | ✅ Complete | GTC with price checks |
+| Stop-Limit Orders | Bonus | ✅ Complete | Conditional triggers |
+| OCO Orders | Bonus | ✅ Complete | Auto-cancel paired orders |
+| TWAP Strategy | Bonus | ✅ Complete | Time-sliced execution |
+| Grid Trading | Bonus | ✅ Complete | Automated range trading |
+| Enhanced CLI UX | Bonus | ✅ Complete | Interactive menus + prompts |
+| Input Validation | Core | ✅ Complete | 16/16 tests pass |
+| Structured Logging | Core | ✅ Complete | Console + bot.log |
+| README.md | Core | ✅ Complete | Comprehensive docs |
+| report.pdf | Core | ✅ Complete | This document |
 | Historical Data | Bonus | ✅ Complete | 211k trade analysis |
 | Fear & Greed Index | Bonus | ✅ Complete | Sentiment signals |
 

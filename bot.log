@@ -129,3 +129,137 @@ binance.exceptions.BinanceAPIException: APIError(code=-4164): Order's notional m
 2026-02-10 12:39:42 - __main__ - INFO - BinanceClient initialized successfully
 2026-02-10 12:39:42 - __main__ - INFO - Current price for BTCUSDT: 68964.7
 2026-02-10 12:39:43 - __main__ - INFO - Balance for USDT: Total=4999.83414376, Available=4966.25098883
+2026-02-10 13:21:03 - src.client - INFO - Connected to Binance Futures TESTNET
+2026-02-10 13:21:03 - src.client - INFO - BinanceClient initialized successfully
+2026-02-10 13:21:46 - src.client - INFO - Connected to Binance Futures TESTNET
+2026-02-10 13:21:46 - src.client - INFO - BinanceClient initialized successfully
+2026-02-10 13:23:55 - src.client - INFO - Connected to Binance Futures TESTNET
+2026-02-10 13:23:55 - src.client - INFO - BinanceClient initialized successfully
+2026-02-10 13:23:55 - src.client - INFO - Current price for BTCUSDT: 68910.2
+2026-02-10 13:23:55 - src.client - INFO - Balance for USDT: Total=4999.83414376, Available=4965.97333388
+2026-02-10 13:23:56 - src.client - INFO - Current price for BTCUSDT: 68916.2
+2026-02-10 13:23:56 - src.client - INFO - Balance for USDT: Total=4999.83414376, Available=4965.97332521
+2026-02-10 13:26:45 - src.client - INFO - Connected to Binance Futures TESTNET
+2026-02-10 13:26:45 - src.client - INFO - BinanceClient initialized successfully
+2026-02-10 13:26:46 - src.client - INFO - Current price for BTCUSDT: 68922.4
+2026-02-10 13:26:46 - src.client - INFO - Balance for USDT: Total=4999.83414376, Available=4966.05122375
+2026-02-10 13:27:51 - src.client - INFO - Current price for BTCUSDT: 68938.6
+2026-02-10 13:28:05 - cli - INFO - Placing MARKET order: SELL 1.0 BTCUSDT
+2026-02-10 13:28:05 - src.client - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 1.0}
+2026-02-10 13:28:05 - src.client - INFO - Order placed successfully: ID=12158753664, Symbol=BTCUSDT, Side=SELL, Type=MARKET, Status=NEW
+2026-02-10 13:28:05 - cli - INFO - Market order response: {'orderId': 12158753664, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJe8ae599792c649cd2a5329', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '1.000', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1770710285731}
+2026-02-10 13:29:36 - src.client - INFO - Connected to Binance Futures TESTNET
+2026-02-10 13:29:36 - src.client - INFO - BinanceClient initialized successfully
+2026-02-10 13:29:36 - src.client - INFO - Current price for BTCUSDT: 68894.0
+2026-02-10 13:29:37 - src.client - INFO - Balance for USDT: Total=4971.24766369, Available=1591.95360500
+2026-02-10 13:33:32 - src.client - INFO - Connected to Binance Futures TESTNET
+2026-02-10 13:33:32 - src.client - INFO - BinanceClient initialized successfully
+2026-02-10 13:33:32 - __main__ - INFO - Initializing MarketOrder: BUY 0.002 BTCUSDT
+2026-02-10 13:33:32 - __main__ - INFO - Validating market order parameters...
+2026-02-10 13:33:32 - __main__ - INFO - All parameters validated successfully
+2026-02-10 13:33:32 - __main__ - INFO - Executing market order: BUY 0.002 BTCUSDT
+2026-02-10 13:33:32 - src.client - INFO - Current price for BTCUSDT: 68887.4
+2026-02-10 13:33:32 - __main__ - INFO - Current BTCUSDT price: $68,887.40 (reference only — market orders fill at best available)
+2026-02-10 13:33:32 - src.client - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.002}
+2026-02-10 13:33:32 - src.client - INFO - Order placed successfully: ID=12158837918, Symbol=BTCUSDT, Side=BUY, Type=MARKET, Status=NEW
+2026-02-10 13:33:32 - __main__ - INFO - ✅ Market order executed successfully!
+   Order ID    : 12158837918
+   Symbol      : BTCUSDT
+   Side        : BUY
+   Quantity    : 0.002
+   Status      : NEW
+   Avg Price   : 0.00
+2026-02-10 13:33:37 - __main__ - INFO - Loaded 2644 Fear & Greed entries from /Users/pruthvijain/Documents/Projects/pruthvijain-binance-bot/fear_greed_index.csv
+2026-02-10 13:33:43 - src.client - INFO - Connected to Binance Futures TESTNET
+2026-02-10 13:33:43 - src.client - INFO - BinanceClient initialized successfully
+2026-02-10 13:33:43 - src.client - INFO - Current price for BTCUSDT: 68920.3
+2026-02-10 13:33:43 - src.client - INFO - Balance for USDT: Total=4914.72637871, Available=1542.31325870
+2026-02-10 13:34:26 - src.client - INFO - Connected to Binance Futures TESTNET
+2026-02-10 13:34:26 - src.client - INFO - BinanceClient initialized successfully
+2026-02-10 13:34:26 - src.advanced.grid - INFO - Grid: BTCUSDT range=[60000.0, 61000.0] grids=5 qty=1.0
+2026-02-10 13:34:26 - src.advanced.grid - INFO - Grid parameters validated
+2026-02-10 13:34:26 - src.advanced.grid - INFO - Grid levels: [60000.0, 60200.0, 60400.0, 60600.0, 60800.0, 61000.0]
+2026-02-10 13:34:26 - src.client - INFO - Current price for BTCUSDT: 68886.0
+2026-02-10 13:34:26 - src.client - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 1.0, 'price': 60000.0, 'timeInForce': 'GTC'}
+2026-02-10 13:34:27 - src.client - INFO - Order placed successfully: ID=12158854368, Symbol=BTCUSDT, Side=BUY, Type=LIMIT, Status=NEW
+2026-02-10 13:34:27 - src.advanced.grid - INFO - Grid BUY @ $60,000.00 placed (ID: 12158854368)
+2026-02-10 13:34:27 - src.client - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 1.0, 'price': 60200.0, 'timeInForce': 'GTC'}
+2026-02-10 13:34:27 - src.client - INFO - Order placed successfully: ID=12158854419, Symbol=BTCUSDT, Side=BUY, Type=LIMIT, Status=NEW
+2026-02-10 13:34:27 - src.advanced.grid - INFO - Grid BUY @ $60,200.00 placed (ID: 12158854419)
+2026-02-10 13:34:27 - src.client - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 1.0, 'price': 60400.0, 'timeInForce': 'GTC'}
+2026-02-10 13:34:28 - src.client - ERROR - API error placing order: Margin is insufficient. (Code: -2019)
+Traceback (most recent call last):
+  File "/Users/pruthvijain/Documents/Projects/pruthvijain-binance-bot/src/client.py", line 257, in place_order
+    order = self.client.futures_create_order(**params)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/binance/client.py", line 7867, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/binance/client.py", line 143, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/binance/client.py", line 106, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/binance/client.py", line 115, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2019): Margin is insufficient.
+2026-02-10 13:34:28 - src.advanced.grid - ERROR - Failed to place BUY @ $60,400.00
+2026-02-10 13:34:28 - src.client - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 1.0, 'price': 60600.0, 'timeInForce': 'GTC'}
+2026-02-10 13:34:28 - src.client - ERROR - API error placing order: Margin is insufficient. (Code: -2019)
+Traceback (most recent call last):
+  File "/Users/pruthvijain/Documents/Projects/pruthvijain-binance-bot/src/client.py", line 257, in place_order
+    order = self.client.futures_create_order(**params)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/binance/client.py", line 7867, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/binance/client.py", line 143, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/binance/client.py", line 106, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/binance/client.py", line 115, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2019): Margin is insufficient.
+2026-02-10 13:34:28 - src.advanced.grid - ERROR - Failed to place BUY @ $60,600.00
+2026-02-10 13:34:28 - src.client - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 1.0, 'price': 60800.0, 'timeInForce': 'GTC'}
+2026-02-10 13:34:28 - src.client - ERROR - API error placing order: Margin is insufficient. (Code: -2019)
+Traceback (most recent call last):
+  File "/Users/pruthvijain/Documents/Projects/pruthvijain-binance-bot/src/client.py", line 257, in place_order
+    order = self.client.futures_create_order(**params)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/binance/client.py", line 7867, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/binance/client.py", line 143, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/binance/client.py", line 106, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/binance/client.py", line 115, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2019): Margin is insufficient.
+2026-02-10 13:34:28 - src.advanced.grid - ERROR - Failed to place BUY @ $60,800.00
+2026-02-10 13:34:28 - src.client - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 1.0, 'price': 61000.0, 'timeInForce': 'GTC'}
+2026-02-10 13:34:29 - src.client - ERROR - API error placing order: Margin is insufficient. (Code: -2019)
+Traceback (most recent call last):
+  File "/Users/pruthvijain/Documents/Projects/pruthvijain-binance-bot/src/client.py", line 257, in place_order
+    order = self.client.futures_create_order(**params)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/binance/client.py", line 7867, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/binance/client.py", line 143, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/binance/client.py", line 106, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/binance/client.py", line 115, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2019): Margin is insufficient.
+2026-02-10 13:34:29 - src.advanced.grid - ERROR - Failed to place BUY @ $61,000.00
+2026-02-10 13:34:29 - src.advanced.grid - INFO - 2 grid orders placed
+2026-02-10 13:34:29 - src.client - INFO - Order 12158854368 status: NEW, Filled: 0.000/1.000
+2026-02-10 13:34:29 - src.client - INFO - Order 12158854419 status: NEW, Filled: 0.000/1.000
+2026-02-10 13:34:40 - src.client - INFO - Order 12158854368 status: NEW, Filled: 0.000/1.000
+2026-02-10 13:34:40 - src.client - INFO - Order 12158854419 status: NEW, Filled: 0.000/1.000

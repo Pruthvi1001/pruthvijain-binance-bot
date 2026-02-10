@@ -46,7 +46,7 @@ A command-line trading bot for **Binance USDT-M Futures** built in Python. Suppo
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/pruthvijain/pruthvijain-binance-bot.git
+git clone https://github.com/Pruthvi1001/pruthvijain-binance-bot.git
 cd pruthvijain-binance-bot
 ```
 
@@ -79,9 +79,40 @@ USE_TESTNET=True
 
 ---
 
-## Usage Examples
+## Quick Start — Unified CLI
 
-All commands are run from the project root directory.
+The **recommended** way to use the bot is through the unified CLI (`cli.py`):
+
+### Interactive Mode (Menu-driven)
+```bash
+python cli.py
+```
+This launches a colorful interactive menu where you can select order types,
+enter parameters with validation, and confirm before execution.
+
+### Direct Mode (Single command)
+```bash
+# Market order
+python cli.py market BTCUSDT BUY 0.002
+
+# Limit order
+python cli.py limit BTCUSDT BUY 0.002 60000
+
+# Stop-limit order
+python cli.py stop BTCUSDT SELL 0.002 58000 57800
+```
+
+### CLI Help
+```bash
+python cli.py --help
+python cli.py market --help
+```
+
+---
+
+## Per-Module Usage
+
+Each order type can also be run as a standalone module:
 
 ### Market Order
 ```bash
@@ -167,6 +198,7 @@ python -m src.analysis.fear_greed --latest 30 --signal
 
 ```
 pruthvijain-binance-bot/
+├── cli.py                           # 🚀 Unified CLI entry point (interactive + direct)
 ├── src/
 │   ├── __init__.py              # Package init
 │   ├── config.py                # API config, constants, .env loading
